@@ -1,0 +1,15 @@
+$theme-colors: (
+    'primary': #00285f,
+    'warning': #f78b00,
+);
+$custom-colors: (
+  "gray-color": #ededed
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$body-bg : #e5e5e5;
+$body-color : #263238;
+
+@import 'bootstrap/scss/bootstrap.scss';
