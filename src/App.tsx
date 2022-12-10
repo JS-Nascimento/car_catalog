@@ -1,14 +1,13 @@
 import './assets/styles/custom.scss';
 import './App.css';
 import 'bootstrap'
-import Navbar from './components/Navbar'
-import Home from './pages/Home'
+import Routes from './Routes';
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Home/>
+      <Routes/>
     </div>
   );
 }

@@ -1,0 +1,52 @@
+body {
+  background-color: #fff;
+}
+
+.card-container-s {
+  display: block;
+  align-content: center;
+  background-color: #ededed;
+  border-radius: 10px;
+  margin: 10px 10px;
+  padding: 25px 20px;
+}
+
+.card-form input {
+  height: 40px;
+  border-radius: 8px 0px 0px 8px;
+  border: 1px;
+  width: calc((100% - 77px));
+}
+
+.card-form button {
+  height: 40px;
+  width: 77px;
+  border-radius: 0px 8px 8px 0px;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 557px) {
+  .card-form input {
+    width: calc((100% - 174px));
+  }
+
+  .card-form button {
+    width: 174px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .card-form {
+    margin: 20px 0px;
+  }
+
+  .card-form input {
+    margin-left: 80px;
+    width: calc((100% - 334px));
+  }
+
+  .card-form button {
+    margin-right: 80px;
+    width: 174px;
+  }
+}

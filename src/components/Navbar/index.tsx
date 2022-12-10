@@ -1,12 +1,13 @@
+import { Link, NavLink } from 'react-router-dom';
 import './styles.css';
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-warning nav-container">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        <Link to="/" className="navbar-brand p-3" >
           <h3>Extreme Cars</h3>
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -19,13 +20,24 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+
           <div className="navbar-nav nav-menu-container ">
-            <a className="nav-link active" aria-current="page" href="/">
-              Home
-            </a>
-            <a className="nav-link" href="/catalogo">
+          <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  (isActive ? 'active' : '')
+                }
+                end 
+              >
+                Home
+              </NavLink>
+            <NavLink
+                to="/catalogo"
+                className={({ isActive }) =>
+                  (isActive ? 'active px-5' : 'px-5')
+                }>
               Catálogo
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>
